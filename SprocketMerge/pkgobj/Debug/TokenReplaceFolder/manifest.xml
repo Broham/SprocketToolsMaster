@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="25069d83-b72e-42b5-8bff-dbf50f96932d" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="DocX.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="DocX, Version=1.0.0.11, Culture=neutral, PublicKeyToken=b2246655ac7e59f6" Namespace="Novacode" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+    <Assembly Location="SprocketMerge.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SprocketMerge\UploadFile.aspx" />
+  </TemplateFiles>
+</Solution>

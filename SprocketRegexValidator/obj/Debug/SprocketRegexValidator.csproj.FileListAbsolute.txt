@@ -1,0 +1,6 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketRegexValidator\bin\Debug\SprocketRegexValidator.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketRegexValidator\bin\Debug\SprocketRegexValidator.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketRegexValidator\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketRegexValidator\obj\Debug\SprocketRegexValidator.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketRegexValidator\obj\Debug\SprocketRegexValidator.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketRegexValidator\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

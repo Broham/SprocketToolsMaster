@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Projects/!svn/ver/19/SprocketToolsMaster/SprocketRegexValidator
+END
+key.snk
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Projects/!svn/ver/19/SprocketToolsMaster/SprocketRegexValidator/key.snk
+END
+SprocketRegexValidator.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Projects/!svn/ver/19/SprocketToolsMaster/SprocketRegexValidator/SprocketRegexValidator.csproj
+END
+RegexValidatedInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Projects/!svn/ver/19/SprocketToolsMaster/SprocketRegexValidator/RegexValidatedInput.cs
+END
+RegexValidatedInputControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Projects/!svn/ver/19/SprocketToolsMaster/SprocketRegexValidator/RegexValidatedInputControl.cs
+END

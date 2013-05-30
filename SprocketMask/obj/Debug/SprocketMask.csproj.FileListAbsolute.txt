@@ -1,0 +1,6 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketMask\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketMask\bin\Debug\SprocketMask.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketMask\bin\Debug\SprocketMask.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketMask\obj\Debug\SprocketMask.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketMask\obj\Debug\SprocketMask.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketMask\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

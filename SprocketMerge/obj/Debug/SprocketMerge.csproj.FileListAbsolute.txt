@@ -1,0 +1,6 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketMerge\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketMerge\bin\Debug\SprocketMerge.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketMerge\bin\Debug\SprocketMerge.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketMerge\obj\Debug\SprocketMerge.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketMerge\obj\Debug\SprocketMerge.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketMerge\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

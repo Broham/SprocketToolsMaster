@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="275573b1-efc7-44e0-9bf5-92805725c8f9" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SprocketLookup.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+</Solution>

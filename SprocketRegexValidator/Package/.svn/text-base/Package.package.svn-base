@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="55011729-722b-46a9-9bb8-e870949cf087" solutionId="55011729-722b-46a9-9bb8-e870949cf087" resetWebServer="false" name="SprocketRegexValidator" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="53ee1718-fffe-4f8e-8d58-877290d9059d" />
+  </projectItems>
+</package>

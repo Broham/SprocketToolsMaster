@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">MaskedInput</Field>
+    <Field Name="ParentType">Text</Field>
+    <Field Name="TypeDisplayName">Masked Input</Field>
+    <Field Name="TypeShortDescription">
+      Masked Input.  Example: (555) 555-5555
+    </Field>
+    <Field Name="AllowBaseTypeRendering">TRUE</Field>
+    <Field Name="FieldTypeClass">
+      SprocketMask.MaskedInput, SprocketMask,
+      Version=1.0.0.0,Culture=neutral,PublicKeyToken=2f043c6337a3e9b7
+    </Field>
+    <Field Name="FieldEditorUserControl">
+      /_controltemplates/sprocketMask/MaskedInputFieldEditor.ascx
+    </Field>
+    <!--<PropertySchema>
+      <Fields>
+        <Field Name="Mask"
+               DisplayName="Mask to apply: "
+               MaxLength="50"
+               DisplaySize="50"
+               Type="Text">
+        </Field>
+        <Field Name="Instructions"
+           DisplayName="Instructions to display: "
+           MaxLength="100"
+           DisplaySize="50"
+           Type="Text">
+          <Default></Default>
+        </Field>
+      </Fields>
+    </PropertySchema>-->
+  </FieldType>
+</FieldTypes>

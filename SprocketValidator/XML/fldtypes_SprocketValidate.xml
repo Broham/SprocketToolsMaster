@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">ValidatorInput</Field>
+    <Field Name="ParentType">Text</Field>
+    <Field Name="TypeDisplayName">SprocketValidator Input</Field>
+    <Field Name="TypeShortDescription">
+      Validated Input
+    </Field>
+    <Field Name="FieldEditorUserControl">SprocketValidator/ValidatorSettings.ascx</Field>
+    <Field Name="AllowBaseTypeRendering">TRUE</Field>
+    <Field Name="FieldTypeClass">
+      SprocketValidator.ValidatedInput, SprocketValidator,
+      Version=1.0.0.0,Culture=neutral,PublicKeyToken=6d8442061715448c
+    </Field>
+  </FieldType>
+</FieldTypes>

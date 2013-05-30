@@ -1,0 +1,9 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\bin\SprocketToolsWebsite.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\bin\SprocketToolsWebsite.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\bin\Microsoft.Deployment.Compression.Cab.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\bin\Microsoft.Deployment.Compression.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\bin\Microsoft.Deployment.Compression.xml
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\bin\Microsoft.Deployment.Compression.Cab.xml
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\obj\Debug\SprocketToolsWebsite.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketToolsWebsite\obj\Debug\SprocketToolsWebsite.pdb

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My Visual WebPart Feature" Id="8f1f8995-680b-4267-97d8-8a41f2f870cc" Scope="Site" Title="SprocketComplete Feature1">
+  <ElementManifests>
+    <ElementManifest Location="SprocketComplete\Elements.xml" />
+    <ElementFile Location="SprocketComplete\SprocketComplete.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Projects/!svn/ver/40/SprocketToolsMaster/SprocketLookup
+END
+key.snk
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Projects/!svn/ver/40/SprocketToolsMaster/SprocketLookup/key.snk
+END
+SprocketLookup.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Projects/!svn/ver/40/SprocketToolsMaster/SprocketLookup/SprocketLookup.csproj
+END
+FilteredLookupInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Projects/!svn/ver/40/SprocketToolsMaster/SprocketLookup/FilteredLookupInput.cs
+END
+FilteredLookupControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Projects/!svn/ver/40/SprocketToolsMaster/SprocketLookup/FilteredLookupControl.cs
+END

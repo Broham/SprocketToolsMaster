@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">RegexInput</Field>
+    <Field Name="ParentType">Text</Field>
+    <Field Name="TypeDisplayName">Regex Validated Input</Field>
+    <Field Name="TypeShortDescription">
+      Regex Validated Input
+    </Field>
+    <Field Name="AllowBaseTypeRendering">TRUE</Field>
+    <Field Name="FieldTypeClass">
+      SprocketRegexValidator.RegexValidatedInput, SprocketRegexValidator,
+      Version=1.0.0.0,Culture=neutral,PublicKeyToken=8ec4c99bda319b45
+    </Field>
+    <PropertySchema>
+      <Fields>
+        <Field Name="Regex"
+               DisplayName="Regular Expression to match: "
+               MaxLength="5000"
+               DisplaySize="50"
+               Type="Text">
+        </Field>
+      </Fields>
+    </PropertySchema>
+  </FieldType>
+</FieldTypes>
+

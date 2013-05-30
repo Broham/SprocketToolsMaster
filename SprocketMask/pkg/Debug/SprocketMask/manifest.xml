@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d2c527eb-dac1-420c-b7ff-2551eef9a4d0" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SprocketMask.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="XML\fldtypes_MaskedInput.xml" />
+    <TemplateFile Location="Layouts\SprocketMask\jquery.js" />
+    <TemplateFile Location="Layouts\SprocketMask\jquery.maskedinput-1.3.min.js" />
+    <TemplateFile Location="Layouts\SprocketMask\mask.js" />
+    <TemplateFile Location="ControlTemplates\SprocketMask\MaskedInputFieldEditor.ascx" />
+  </TemplateFiles>
+</Solution>

@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SprocketToolsWebsite.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Providing SharePoint web parts and administrative tools</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/Styles/colorbox.css" />
+
+    <meta name="msvalidate.01" content="26F1FC55AE14103232525D9C9622790C" />
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-11902457-8']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+     </script>
+      <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+      <script src="Scripts/jquery.colorbox-min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div id="top_header">
+        <div class="header_links">
+            <a href="Default.aspx" class="header_link">Home</a> |  <a href="About.aspx" class="header_link">About</a> |  <a href="ContactUs.aspx" class="header_link">Contact</a>
+        </div>
+	</div>
+	<div id="header">
+        <a href="Default.aspx"><img id="logo" src="images/logo3.png" alt="Sprocket tools logo" /></a>
+        <div id="slogan">
+            Making SharePoint easy...
+        </div>
+        <div style="clear:both;">
+        </div>
+        <div id="nav_tabs">
+            <div id="home" class="tab selected_tab "><a href="Default.aspx">Home</a></div>
+            <div id="products" class="tab other_tab "><a href="ProductList.aspx">Products</a></div>
+            <div id="demos" class="tab other_tab "><a href="Demos.aspx">Demos</a></div>
+        </div>
+	</div>
+    <div style="clear:both;"></div>
+
+    <asp:ContentPlaceHolder ID="FeaturedContent" runat="server" />
+
+    <div id="main">
+        
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainAll" runat="server" />
+        </div>
+        
+        <div id="left_content">
+            <asp:ContentPlaceHolder ID="MainLeft" runat="server"/>
+        </div>
+        
+        <div id="right_content">
+            <asp:ContentPlaceHolder ID="MainRight" runat="server"/>
+        </div>
+
+        <div style="clear:both;">
+            &nbsp;
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,236 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.SharePoint;
+using Microsoft.SharePoint.WebControls;
+using System.Web.UI.WebControls;
+using System.Xml.XPath;
+using System.Xml;
+using System.Net;
+using System.Globalization;
+
+namespace SprocketValidator
+{
+    class ValidatedInputControl : BaseFieldControl
+    {
+        ValidatedInput field;
+        TextBox tb_ValidatedInput;
+        Label lbl_Instructions;
+        RegularExpressionValidator regexVal;
+        RangeValidator rangeVal;
+        CompareValidator compareVal;
+        CompareValidator typeCheckVal;
+        CustomValidator customVal;
+        private bool isLicensed;
+
+        public ValidatedInputControl(ValidatedInput vi)
+        {
+            field = vi;
+            this.tb_ValidatedInput = new TextBox();
+            this.regexVal = new RegularExpressionValidator();
+
+        }
+
+        //Writes controls to page when editing
+        protected override void CreateChildControls()
+        {
+            #region licensing
+            SPWeb web = SPContext.Current.Web;
+            //XmlTextReader reader = new XmlTextReader(web.Url + "/_layouts/SprocketValidator/key.xml");
+            //reader.Read();
+            //string key = System.Text.Encoding.ASCII.GetString(Convert.FromBase64String(reader.Value));
+
+            WebRequest request = WebRequest.Create(web.Url + "/_layouts/SprocketValidator/key.xml");
+            request.Credentials = CredentialCache.DefaultCredentials;
+            WebResponse response = request.GetResponse();
+            XmlTextReader reader = new XmlTextReader(response.GetResponseStream());
+            reader.ReadToFollowing("key");
+            reader.Read();
+
+            string key = System.Text.Encoding.ASCII.GetString(Convert.FromBase64String(reader.Value));
+            string[] values = key.Split(new char[] { '|' });
+            DateTime expireDate = DateTime.ParseExact(values[values.Length - 1], "yyyyMMdd",CultureInfo.InvariantCulture) ;
+            if (DateTime.Now > expireDate || values.Contains<string>(System.Environment.MachineName))
+            {
+                base.CreateChildControls();
+                tb_ValidatedInput = new TextBox();
+                tb_ValidatedInput.ID = "tb_ValidatedInput";
+                lbl_Instructions = new Label();
+                lbl_Instructions.ID = "lbl_Instructions";
+                lbl_Instructions.Text = "<b>The license for this product has expired or is invalid</b>";
+                this.Controls.Add(lbl_Instructions);
+                return;
+            }
+            #endregion
+
+            base.CreateChildControls();
+            tb_ValidatedInput = new TextBox();
+            tb_ValidatedInput.ID = "tb_ValidatedInput";
+            lbl_Instructions = new Label();
+            lbl_Instructions.ID = "lbl_Instructions";
+            lbl_Instructions.Text = "<br/><i>" + field.GetFieldAttribute("Instructions") + "</i>";
+
+            this.Controls.Add(tb_ValidatedInput);
+
+            int validationType;
+            int.TryParse(field.GetFieldAttribute("ValidationType"), out validationType);
+            switch ((ValidatedInput.ValidationTypes)validationType)
+            {
+                case ValidatedInput.ValidationTypes.Masked:
+                    tb_ValidatedInput.Attributes.Add("onfocus", "$(this).mask('" + field.GetFieldAttribute("Mask") + "')");
+                    break;
+                case ValidatedInput.ValidationTypes.Regex:
+                    regexVal = new RegularExpressionValidator();
+                    regexVal.ValidationExpression = field.GetFieldAttribute("Regex") ?? string.Empty;
+                    regexVal.ControlToValidate = "tb_ValidatedInput";
+                    regexVal.Text = "Input invalid!";
+                    this.Controls.Add(regexVal);
+                    break;
+                case ValidatedInput.ValidationTypes.Value:
+
+                    rangeVal = new RangeValidator();
+                    customVal = new CustomValidator();
+                    compareVal = new CompareValidator();
+                    typeCheckVal = new CompareValidator();
+
+                    compareVal.ControlToValidate = "tb_ValidatedInput";
+                    rangeVal.ControlToValidate = "tb_ValidatedInput";
+                    customVal.ControlToValidate = "tb_ValidatedInput";
+                    typeCheckVal.ControlToValidate = "tb_ValidatedInput";
+                    typeCheckVal.Operator = ValidationCompareOperator.DataTypeCheck;
+
+                    string value = field.GetFieldAttribute("ComparisonValue");
+                    string errorMessage = "Your value must ";
+                    string dataType = field.GetFieldAttribute("ComparisonDataType");
+
+                    switch (dataType)
+                    {
+                        case "Number":
+                            //rangeVal.Type = ValidationDataType.Double;
+                            compareVal.Type = ValidationDataType.Double;
+                            typeCheckVal.Type = ValidationDataType.Double;
+                            typeCheckVal.ErrorMessage = "You must enter a number<br/>";
+                            this.Controls.Add(typeCheckVal);
+                            break;
+                        case "Date":
+                            //rangeVal.Type = ValidationDataType.Date;
+                            compareVal.Type = ValidationDataType.Date;
+                            typeCheckVal.Type = ValidationDataType.Date;
+                            typeCheckVal.ErrorMessage = "You must enter a date<br/>";
+                            this.Controls.Add(typeCheckVal);
+                            break;
+                        default:
+                            //rangeVal.Type = ValidationDataType.String;
+                            compareVal.Type = ValidationDataType.String;
+                            //typeCheckVal.Type = ValidationDataType.String;
+                            //typeCheckVal.ErrorMessage = "You must enter a word or words";
+                            break;
+                    }
+
+                    switch (field.GetFieldAttribute("Comparison"))
+                    {
+                        case "Be Greater Than...":
+                            errorMessage += "be greater than: " + value;
+                            compareVal.ErrorMessage = errorMessage;
+                            compareVal.Operator = ValidationCompareOperator.GreaterThan;
+                            compareVal.ValueToCompare = value;
+                            this.Controls.Add(compareVal);
+                            break;
+                        case "Be Less Than...":
+                            errorMessage += "be less than: " + value;
+                            compareVal.ErrorMessage = errorMessage;
+                            compareVal.Operator = ValidationCompareOperator.LessThan;
+                            compareVal.ValueToCompare = value;
+                            this.Controls.Add(compareVal);
+                            break;
+                        case "Start With...":
+                            errorMessage += "start with: " + value;
+                            customVal.ErrorMessage = errorMessage;
+                            customVal.ServerValidate += StartsWith;
+                            this.Controls.Add(customVal);
+                            break;
+                        case "End With...":
+                            errorMessage += "end with: " + value;
+                            customVal.ErrorMessage = errorMessage;
+                            customVal.ServerValidate += EndsWith;
+                            this.Controls.Add(customVal);
+                            break;
+                        case "Contain...":
+                        default:
+                            errorMessage += "contain: " + value;
+                            customVal.ErrorMessage = errorMessage;
+                            customVal.ServerValidate += Contains;
+                            this.Controls.Add(customVal);
+                            break;
+                    }
+
+                    break;
+            }
+
+            this.Controls.Add(lbl_Instructions);
+        }
+
+        public void StartsWith(object sender, ServerValidateEventArgs e)
+        {
+            string value = field.GetFieldAttribute("ComparisonValue");
+            e.IsValid = e.Value.StartsWith(value);
+        }
+
+        public void EndsWith(object sender, ServerValidateEventArgs e)
+        {
+            string value = field.GetFieldAttribute("ComparisonValue");
+            e.IsValid = e.Value.EndsWith(value);
+        }
+
+        public void Contains(object sender, ServerValidateEventArgs e)
+        {
+            string value = field.GetFieldAttribute("ComparisonValue");
+            e.IsValid = e.Value.Contains(value);
+        }
+
+
+        protected override void OnPreRender(EventArgs e)
+        {
+            this.Page.ClientScript.RegisterClientScriptInclude("validatorJquery", "/_layouts/SprocketValidator/LoadjQuery.js");
+            this.Page.ClientScript.RegisterClientScriptInclude("validatorMask", "/_layouts/SprocketValidator/LoadMask.js");
+            //this.Page.ClientScript.RegisterClientScriptInclude("jquery", "/_layouts/SprocketValidator/jQuery.js");
+            //this.Page.ClientScript.RegisterClientScriptInclude("jQueryPlugin", "/_layouts/SprocketValidator/jquery.maskedinput-1.3.min.js");
+        }
+
+        public virtual string Text
+        {
+            get
+            {
+                this.EnsureChildControls();
+                if (this.tb_ValidatedInput == null)
+                {
+                    return null;
+                }
+                return this.tb_ValidatedInput.Text;
+            }
+            set
+            {
+                if (this.tb_ValidatedInput != null)
+                {
+                    this.tb_ValidatedInput.Text = value;
+                }
+            }
+        }
+
+        public override object Value
+        {
+            get
+            {
+                return this.Text;
+            }
+            set
+            {
+                if (base.Field != null)
+                {
+                    this.Text = base.Field.GetFieldValueForEdit(value);
+                }
+            }
+        }
+    }
+}

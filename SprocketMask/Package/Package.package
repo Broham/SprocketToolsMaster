@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d2c527eb-dac1-420c-b7ff-2551eef9a4d0" solutionId="d2c527eb-dac1-420c-b7ff-2551eef9a4d0" resetWebServer="false" name="SprocketMask" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="1a78b5a4-e013-4a03-be3e-404fd96c7fb5" />
+    <projectItemReference itemId="09b3e878-9e3c-4c14-b315-0da3181ea844" />
+    <projectItemReference itemId="1be5651e-7cf5-4419-b522-bc290dade69b" />
+  </projectItems>
+</package>

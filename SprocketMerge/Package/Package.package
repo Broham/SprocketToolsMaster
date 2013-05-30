@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="25069d83-b72e-42b5-8bff-dbf50f96932d" solutionId="25069d83-b72e-42b5-8bff-dbf50f96932d" resetWebServer="false" name="SprocketMerge" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="DocX.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\Signer\Strong\DocX.dll">
+      <safeControls>
+        <safeControl assemblyName="DocX, Version=1.0.0.11, Culture=neutral, PublicKeyToken=b2246655ac7e59f6" namespaceName="Novacode" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </customAssembly>
+  </assemblies>
+  <projectItems>
+    <projectItemReference itemId="0f45aaa7-78ae-4f59-98fe-7b917b3a26d5" />
+  </projectItems>
+</package>

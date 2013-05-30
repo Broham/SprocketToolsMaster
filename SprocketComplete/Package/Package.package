@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3188cc41-b99a-485a-848b-161956ee4c31" solutionId="3188cc41-b99a-485a-848b-161956ee4c31" resetWebServer="false" name="SprocketComplete" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="8f1f8995-680b-4267-97d8-8a41f2f870cc" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="a1cb38d4-91af-4802-9e0d-a06ed8ed4adb" />
+  </projectItems>
+</package>

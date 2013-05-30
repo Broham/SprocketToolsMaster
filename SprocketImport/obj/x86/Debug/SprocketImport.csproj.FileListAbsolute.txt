@@ -1,0 +1,9 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\bin\Debug\SprocketImport.exe
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\bin\Debug\SprocketImport.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\SprocketImport.Form1.resources
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\SprocketImport.Properties.Resources.resources
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\SprocketImport.exe
+C:\Development\Projects\SprocketToolsMaster\SprocketImport\obj\x86\Debug\SprocketImport.pdb

@@ -1,0 +1,6 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketLookup\bin\Debug\SprocketLookup.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketLookup\bin\Debug\SprocketLookup.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketLookup\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketLookup\obj\Debug\SprocketLookup.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketLookup\obj\Debug\SprocketLookup.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketLookup\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

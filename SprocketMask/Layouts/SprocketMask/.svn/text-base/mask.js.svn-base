@@ -1,0 +1,4 @@
+﻿function mask(pattern, control) {
+    //alert('test');
+    $(this).mask(pattern);
+}

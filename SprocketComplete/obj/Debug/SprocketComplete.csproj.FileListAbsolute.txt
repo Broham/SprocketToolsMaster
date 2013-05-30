@@ -1,0 +1,11 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\Layouts\1033\STYLES\jquery.autocomplete.css
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\Layouts\SprocketComplete\js\jquery.autocomplete.min.js
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\Layouts\SprocketComplete\js\jquery.min.js
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\Layouts\SprocketComplete\js\jquery.js
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\Layouts\SprocketComplete\js\lib\jquery.bgiframe.min.js
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\SprocketComplete.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\SprocketComplete.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\obj\Debug\SprocketComplete.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\obj\Debug\SprocketComplete.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketComplete\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

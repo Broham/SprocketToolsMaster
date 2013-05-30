@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="55011729-722b-46a9-9bb8-e870949cf087" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SprocketRegexValidator.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="XML\fldtypes_RegexValidate.xml" />
+  </TemplateFiles>
+</Solution>

@@ -1,0 +1,6 @@
+C:\Development\Projects\SprocketToolsMaster\SprocketValidator\bin\Debug\SprocketValidator.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketValidator\bin\Debug\SprocketValidator.pdb
+C:\Development\Projects\SprocketToolsMaster\SprocketValidator\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketValidator\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Projects\SprocketToolsMaster\SprocketValidator\obj\Debug\SprocketValidator.dll
+C:\Development\Projects\SprocketToolsMaster\SprocketValidator\obj\Debug\SprocketValidator.pdb

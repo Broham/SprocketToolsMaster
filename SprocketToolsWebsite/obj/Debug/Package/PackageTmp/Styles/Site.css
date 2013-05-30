@@ -1,0 +1,192 @@
+﻿        body
+        {
+            width:1024px;
+            background-color: #f7f7f7;
+            padding: 5px;
+            border:1px solid #151515;
+            margin:auto;
+            font-family:Calibri;
+            margin-bottom:15px;
+            margin-top:15px;
+            font-family:Calibri;
+        }
+        #top_header
+        {
+            background-color: #151515;
+            height: 30px;
+            border-bottom:1px solid #444444;
+        }
+
+        .header_links
+        {
+            position:relative;
+            top:5px;
+            float:right;
+            padding-right:75px;
+            
+        }
+        a.header_link
+        {
+            color:#8a8a8a;
+        }
+        a
+        {
+            text-decoration:none;
+            border:0 none;
+        }
+        #header
+        {
+            position:relative;
+            width:1024px;
+            height:100px;
+            background-image:url("/images/header_grad.png");
+            height:100px;
+        }
+        #slogan
+        {
+            position:relative;
+            color:#8A8A8A;
+            font-size:x-large;
+            float:right;
+            top:22px;
+            right:200px;
+        }
+        #logo
+        {
+            position:relative;
+            float:left;
+            top:-7px;
+            left:30px;
+        }
+        #nav_tabs
+        {
+            position:absolute;
+            right:10px;
+            width:50%;
+            height:19px;
+            float:left;
+            bottom:0px;
+        }
+        .tab
+        {
+            position:relative;
+            width:140px;
+            text-align:center;
+            bottom:0px;
+            font-weight:bold;
+            float:left;
+        }
+        .other_tab
+        {
+            background-image:url("/images/other_Tab.png");
+            color:#2f2f2f;
+            margin-right:1px;
+            
+
+        }
+        .other_tab A:link
+        {
+            color:#2F2F2F;
+        }
+        .other_tab a
+        {
+            display:block;
+        }
+        .other_tab A:visited
+        {
+            color:inherit;
+        }
+        .selected_tab
+        {
+            background-image:url("/images/Active_Tab.png");
+            color:White;
+            margin-right:1px;
+        }
+        .selected_tab a
+        {
+            display:block;
+        }
+        .selected_tab A:link
+        {
+            color:White;
+        }
+        .selected_tab A:visited
+        {
+            color:inherit;
+        }
+        #featured
+        {
+            background-image:url("/images/featured_bg.png");
+            border-top:1px solid #5acffc;
+            margin-bottom:15px;
+        }
+        #featured_content
+        {
+            position:relative;
+            padding-top:15px;
+            padding-bottom:15px;
+            color:White;
+            /*width: 800px;*/
+            margin:auto;
+            border-bottom:1px solid #DEDEDE;
+        }
+        #featured_content span
+        {
+            font-size:20pt;
+            left:45px;
+            position:relative;
+        }
+        #main
+        {
+            position:relative;
+        }
+        #content
+        {
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .left
+        {
+            float:left;
+        }
+        #left_content
+        {
+            position:relative;
+            float:left;
+            left:75px;
+            width:50%;
+        }
+        .right
+        {
+            float:right;
+        }
+        #right_content
+        {
+            position:relative;
+            float:right;
+            right:75px;
+            width:30%;
+        }
+        .clearing
+        {
+            clear:both;
+        }
+        h3
+        {
+            color:#151515;
+            /*border-bottom: 2px dotted #151515;*/
+            width:100%;
+            left:-25px;
+            position:relative;
+        }
+        img
+        {
+            border:0 none;
+        }
+        .product
+        {
+            border-bottom:1px dotted #151515;
+        }
+        
+        

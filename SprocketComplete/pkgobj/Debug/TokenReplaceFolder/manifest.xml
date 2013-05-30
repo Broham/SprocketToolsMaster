@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3188cc41-b99a-485a-848b-161956ee4c31" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SprocketComplete.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SprocketComplete, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d43d8c75a992c4c1" Namespace="SprocketComplete.SprocketComplete" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\SprocketComplete\SprocketComplete\SprocketCompleteUserControl.ascx" />
+    <TemplateFile Location="Layouts\1033\STYLES\jquery.autocomplete.css" />
+    <TemplateFile Location="Layouts\SprocketComplete\js\jquery.autocomplete.min.js" />
+    <TemplateFile Location="Layouts\SprocketComplete\js\jquery.min.js" />
+    <TemplateFile Location="Layouts\SprocketComplete\js\jquery.js" />
+    <TemplateFile Location="Layouts\SprocketComplete\js\lib\jquery.bgiframe.min.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SprocketComplete_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

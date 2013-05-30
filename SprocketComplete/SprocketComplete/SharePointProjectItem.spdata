@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SprocketCompleteUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SprocketComplete\" Type="ElementManifest" />
+    <ProjectItemFile Source="SprocketComplete.webpart" Target="SprocketComplete\" Type="ElementFile" />
+    <ProjectItemFile Source="SprocketCompleteUserControl.ascx" Target="CONTROLTEMPLATES\SprocketComplete\SprocketComplete\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SprocketComplete.SprocketComplete" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>
